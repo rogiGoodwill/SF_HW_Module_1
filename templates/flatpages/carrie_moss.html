@@ -1,0 +1,15 @@
+{% extends 'flatpages/default.html' %}
+
+{% load static %}
+
+{% block title %} flatpage.title {% endblock title %}
+
+{% block picture %}"{% static 'assets/k_moss.jpg' %}"{% endblock picture %}
+{% block title_actor %} {{ flatpage.title }} {% endblock title_actor %}
+{% block content %}
+    <h1>Об актере: {{ flatpage.title }}</h1>
+    <i>{{ flatpage.content }}</i>
+    <hr>
+    <h2>Информация доступна только для зарегистрированных ползователей</h2>
+{% endblock content %}
+

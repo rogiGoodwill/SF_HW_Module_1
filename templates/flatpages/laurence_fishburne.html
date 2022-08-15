@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% load static %}
+
+{% block title %} flatpage.title {% endblock title %}
+
+{% block picture %}"{% static 'assets/l_fishborne.jpg' %}"{% endblock picture %}
+{% block title_actor %} {{ flatpage.title }} {% endblock title_actor %}
+{% block content %}
+    <h1>Об актере: {{ flatpage.title }}</h1>
+    <i>{{ flatpage.content }}</i>
+    <hr>
+    <i>{{ flatpage.content }}</i>
+{% endblock content %}

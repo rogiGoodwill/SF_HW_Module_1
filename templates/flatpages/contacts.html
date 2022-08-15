@@ -1,0 +1,10 @@
+{% extends 'flatpages/default.html' %}
+
+{% load static %}
+
+{% block title %} Contact Us {% endblock title %}
+{% block picture %}"{% static 'assets/favicon.ico' %}"{% endblock picture %}
+{% block content %}
+    <h1>Contacts</h1>
+    {{ flatpage.content }}
+{% endblock content %}
